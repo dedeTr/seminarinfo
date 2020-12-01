@@ -1,0 +1,8 @@
+.BtnAdd__container {
+  border: 1px solid aquamarine;
+  border-radius: 15px;
+  width: fit-content;
+  height: 30px;
+  padding: 10px;
+  background-color: aquamarine;
+}

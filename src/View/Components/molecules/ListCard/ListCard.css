@@ -1,0 +1,38 @@
+.row__list {
+  display: flex;
+}
+
+.image__list {
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid black;
+  flex: 0.2;
+}
+.image__list > img {
+  width: 80%;
+  margin: 15px 0;
+}
+
+.info__list {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid black;
+  flex: 0.25;
+}
+
+.deskripsi__list {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid black;
+  flex: 0.4;
+}
+
+.aksi__list {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid black;
+  flex: 0.15;
+}

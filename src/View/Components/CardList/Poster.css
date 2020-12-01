@@ -1,0 +1,10 @@
+.Poster__container {
+  border: 2px solid black;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 30px;
+  margin: 20px;
+}
+img {
+  object-fit: contain;
+}

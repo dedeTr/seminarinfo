@@ -1,0 +1,49 @@
+.AddWebinar__container {
+  padding: 30px;
+  width: 100%;
+  margin-left: 250px;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.list__container {
+  /* height: 70vh; */
+  border: 2px solid black;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.title__row {
+  display: flex;
+}
+
+.title__foto {
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid black;
+  flex: 0.2;
+}
+
+.info__singkat {
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid black;
+  flex: 0.25;
+}
+
+.deskripsi {
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid black;
+  flex: 0.4;
+}
+
+.aksi {
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid black;
+  flex: 0.15;
+}
