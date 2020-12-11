@@ -1,12 +1,31 @@
 .AddWebinar__container {
   padding: 30px;
-  width: 100%;
-  margin-left: 250px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  background-color:  #219bf3;
+  align-content: center;
+  margin-top: -2rem;
+  height: 3rem;
+  padding: 1rem;
+}
+
+.header-text{
+  font-size: 2rem;
+  margin-top: .3rem;
+  text-transform: uppercase;
+  color:#fff;
+  margin-left: 1.5rem;;
 }
 
 .title {
   margin-top: 50px;
-  font-size: 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .list__container {
@@ -21,29 +40,40 @@
 }
 
 .title__foto {
-  font-size: 12px;
+  font-size: 1rem;
   text-align: center;
   border: 1px solid black;
   flex: 0.2;
+  padding: .2rem;
 }
 
-.info__singkat {
-  font-size: 12px;
-  text-align: center;
+.poster{
+  width: 20vw;
   border: 1px solid black;
-  flex: 0.25;
+}
+
+.info {
+  width: 15vw;
+  border: 1px solid black;
 }
 
 .deskripsi {
-  font-size: 12px;
-  text-align: center;
   border: 1px solid black;
-  flex: 0.4;
+  width: 40vw;
 }
 
 .aksi {
-  font-size: 12px;
-  text-align: center;
   border: 1px solid black;
-  flex: 0.15;
+}
+
+table {
+  width: 100%;
+}
+
+.ta-center{
+  text-align: center;
+}
+
+.fw-bold {
+  font-weight: bold;
 }

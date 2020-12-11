@@ -5,7 +5,7 @@ import './Home.css'
 
 function Home() {
     const [listCard, setListCard] = useState([])
-    const [search, seSearch] = useState("")
+    const [search, setSearch] = useState("")
     const [topik, setTopik] = useState("")
 
     useEffect(() => {
@@ -19,7 +19,7 @@ function Home() {
     },[])
 
     const handleSearch = (e) => {
-        seSearch(e.target.value)
+        setSearch(e.target.value)
     }
 
     const handleTopik = (e,id) => {
@@ -38,24 +38,25 @@ function Home() {
     }
 
     return (
+    <div className="container">
         <div className= "home__container">
-            <h1 >Webinar App</h1>
+            <h1 className="top-text">SEMINARINFO</h1>
             <div className="search__bar">
-                <input type="text" placeholder="Cari judul seminar di sini...." onChange={e => handleSearch(e)}/>
+                <input type="text" placeholder="Ketik judul seminar disini..." onChange={e => handleSearch(e)}/>
             </div>
             <h2>Seminar yang tersedia</h2>
             <div className="Tag__line">
-                <p>Topik yang dipilih :</p>
-                <div className="tag__bar" id="tag__bar1" onClick={(e)=>handleTopik("teknologi","tag__bar1")}>
+                <p className="topik-teks">Topik yang dipilih :</p>
+                <div className="tag__bar" id="tag__bar1" onClick={(e)=>handleTopik("Teknologi","tag__bar1")}>
                     <p>Teknologi</p>
                 </div>
-                <div className="tag__bar" id="tag__bar2" onClick={()=>handleTopik("kesehatan","tag__bar2")}>
+                <div className="tag__bar" id="tag__bar2" onClick={()=>handleTopik("Kesehatan","tag__bar2")}>
                     <p>Kesehatan</p>
                 </div>
-                <div className="tag__bar" id="tag__bar3" onClick={()=>handleTopik("ekonomi","tag__bar3")}>
+                <div className="tag__bar" id="tag__bar3" onClick={()=>handleTopik("Ekonomi","tag__bar3")}>
                     <p>Ekonomi</p>
                 </div>
-                <div className="tag__bar" id="tag__bar4"  onClick={()=>handleTopik("pendidikan","tag__bar4")}>
+                <div className="tag__bar" id="tag__bar4"  onClick={()=>handleTopik("Pendidikan","tag__bar4")}>
                     <p>Pendidikan</p>
                 </div>
             </div>
@@ -84,6 +85,7 @@ function Home() {
                    })
                }
             </div>
+        </div>
         </div>
     )
 }

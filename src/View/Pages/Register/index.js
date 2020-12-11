@@ -25,10 +25,10 @@ class Register extends Component {
   render() {
     return (
       <div>
-        <h1 className="title__awal">Seminarinfo</h1>
+        <h1 className="title__awal">SEMINARINFO</h1>
         <div className="auth-container">
           <div className="auth-card">
-            <p className="auth-title">Register Page</p>
+            <p className="auth-title">Daftar</p>
             <input
               id="email"
               className="input"
@@ -49,7 +49,7 @@ class Register extends Component {
               isLoading={this.props.isLoading}
             />
             <div className="go__login">
-              <a href="/">Go to login page</a>
+              <a href="/">Kembali ke halaman Login</a>
             </div>
           </div>
         </div>

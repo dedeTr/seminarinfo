@@ -11,7 +11,7 @@ class Login extends Component {
     password: "",
   };
 
-  handleChnageText = (e) => {
+  handleChangeText = (e) => {
     this.setState({
       [e.target.id]: e.target.value,
     });
@@ -38,23 +38,23 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <h1 className="title__awal">Seminarinfo</h1>
+        <h1 className="title__awal">SEMINARINFO</h1>
         <div className="auth-container">
           <div className="auth-card">
-            <p className="auth-title">Login Page</p>
+            <p className="auth-title">Masuk ke Akun Anda</p>
             <input
               id="email"
               className="input"
               type="text"
-              onChange={this.handleChnageText}
+              onChange={this.handleChangeText}
               placeholder="Email"
             />
             <input
               id="password"
               className="input"
               type="password"
-              onChange={this.handleChnageText}
-              placeholder="Password minimal 6 character...."
+              onChange={this.handleChangeText}
+              placeholder="Password"
             />
             <Button
               onClick={this.handleLoginSubmit}
@@ -62,6 +62,7 @@ class Login extends Component {
               isLoading={this.props.isLoading}
             />
             <div className="go__register">
+              <span>Belum punya akun? </span>
               <a href="/register">Register</a>
             </div>
           </div>

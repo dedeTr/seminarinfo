@@ -1,38 +1,49 @@
 .row__list {
-  display: flex;
+  width: 100%;
 }
 
-.image__list {
-  font-size: 12px;
-  text-align: center;
-  border: 1px solid black;
-  flex: 0.2;
-}
-.image__list > img {
-  width: 80%;
-  margin: 15px 0;
+table {
+  width: 100%;
 }
 
-.info__list {
-  padding-top: 10px;
-  font-size: 12px;
-  text-align: center;
+.poster{
+  width: 20vw;
   border: 1px solid black;
-  flex: 0.25;
+  padding: 1rem;
 }
 
-.deskripsi__list {
-  padding-top: 10px;
-  font-size: 12px;
-  text-align: center;
+.info {
+  width: 15vw;
   border: 1px solid black;
-  flex: 0.4;
+  font-weight: normal;
 }
 
-.aksi__list {
-  padding-top: 10px;
-  font-size: 12px;
-  text-align: center;
+.deskripsi {
   border: 1px solid black;
-  flex: 0.15;
+  width: 40vw;
+  text-align: left;
+  padding: .5rem;
+  font-weight: normal;
+}
+
+.aksi {
+  border: 1px solid black;
+  font-weight: normal;
+}
+
+.btn-hapus {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #d63820;
+  border: none;
+  pointer-events: visible;
+  cursor: grab;
+}
+
+.btn-hapus:hover{
+  background-color: #f33621 ;
+  cursor: grabbing;
 }
