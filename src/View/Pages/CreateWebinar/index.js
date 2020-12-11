@@ -41,10 +41,13 @@ class CreateWebinar extends Component {
 
     render() {
         return (
-            <div className="CreateWebinar">
-                <Sidebar />
+            <div className="container-create">
+                {/* <Sidebar /> */}
                 <div className="form__webiner">
-                    <h1>Tambah Webinar</h1>
+                    <div className="header-page">
+                        <a href="/admin"><span className="icon-back"></span></a>
+                        <h1 className="tambah-webinar-judul">Tambah Webinar</h1>
+                    </div>
                     <form onSubmit={e => this.uploadPost(e)}>
                         <label for="judul">Judul Webinar</label>
                         <input type="text" id="judul"  onChange={this.handleFormChange} required/>
@@ -64,7 +67,7 @@ class CreateWebinar extends Component {
                         <textarea placeholder="Deskripsi..." id="deskripsi" onChange={this.handleFormChange} required/>
                         <label for="poster">Poster</label>
                         <input type="file" id="poster" required onChange={e => this.setState({posterUploaded: e.target.files[0]})} />
-                        <input type="submit" value="Submit"  />
+                        <input type="submit" value="SUBMIT" id="submit-btn" />
                     </form>
                 </div>
             </div>

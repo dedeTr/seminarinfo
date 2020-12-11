@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import { getWebinar } from '../../../Model'
-import { BtnAdd, ListCard } from '../molecules'
-import {db} from "../../../Controller/Firebase"
-import './AddWebinar.css'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { getWebinar } from '../../../Model';
+import { BtnAdd, ListCard } from '../molecules';
+import {db} from "../../../Controller/Firebase";
+import './AddWebinar.css';
+import { Link } from 'react-router-dom';
 
 function AddWebinar() {
     const [listCard, setListCard] = useState([])
@@ -19,29 +19,25 @@ function AddWebinar() {
     },[])
     return (
         <div className="AddWebinar__container">
+            <div className="nav-container">
+                <h1 className="header-text">SEMINARINFO Admin</h1>
                 <BtnAdd />
-            <p className="title">Daftar Webinar yang Telah Ditambahkan</p>
-            <div className="list__container">
-                <div className="title__row">
-                    <div className="title__foto">
-                        <p>Foto</p>
-                    </div>
-                    <div className="info__singkat">
-                        <p>Info Singkat</p>
-                    </div>
-                    <div className="deskripsi">
-                        <p>Deskripsi</p>
-                    </div>
-                    <div className="aksi">
-                        <p>Aksi</p>
-                    </div>
-                </div>
+            </div>
+            <p className="title">Webinar yang telah Ditambah</p>
+                <table>
+                    <tr>
+                        <th className="poster ta-center fw-bold">Poster</th>
+                        <th className="info ta-center fw-bold">Info Singkat</th>
+                        <th className="deskripsi ta-center fw-bold">Deskripsi</th>
+                        <th className="aksi ta-center fw-bold">Aksi</th>
+                    </tr>
+                </table>
                {
                    listCard.map((card) => {
                        return <ListCard key={card.id} data={card}/>
                     })
                }
-            </div>
+               
         </div>
     )
 }

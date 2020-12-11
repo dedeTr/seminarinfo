@@ -23,7 +23,8 @@ const uploadPoster = (image) => new Promise((resolve, reject) => {
         }, function() {
           uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
             resolve(downloadURL) 
-            alert("berhasil ditambahkan")
+            alert("Entri berhasil ditambahkan!")
+            window.location.assign("/admin");
           });
         });
       }

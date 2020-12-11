@@ -5,10 +5,8 @@
   height: 100vh;
   align-items: center;
   .auth-card {
-    border: 1px solid #bfbfbf;
-    padding: 16px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    box-shadow: none;
   }
   p.auth-title {
     margin: 0px;
@@ -21,15 +19,14 @@
     margin-top: 32px;
   }
   .go__login {
-    margin-left: 35%;
-    margin-top: 15px;
-    font-size: 12px;
+    margin-top:2rem;
+    font-size: 1rem;
+    text-decoration: none;
   }
 }
 
 input.input {
   padding: 12px;
-  border-radius: 8px;
   border: 1px solid #219bf3;
   outline: none;
   color: #219bf3;
@@ -41,7 +38,6 @@ input.input {
 button.btn {
   padding: 16px;
   border: 1px solid #219bf3;
-  border-radius: 8px;
   min-width: 200px;
   background: #219bf3;
   color: white;

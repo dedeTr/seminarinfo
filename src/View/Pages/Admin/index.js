@@ -6,7 +6,7 @@ import './Admin.css'
 function Admin() {
     return (
         <div className="admin__container">
-            <Sidebar />
+            {/* <Sidebar /> */}
             <AddWebinar />
         </div>
     )

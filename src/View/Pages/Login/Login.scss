@@ -5,43 +5,38 @@
   height: 100vh;
   align-items: center;
   .auth-card {
-    border: 1px solid #bfbfbf;
-    padding: 16px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    border: 1px solid  #219bf3;
+    box-shadow: none;
   }
   p.auth-title {
     margin: 0px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.2rem;
     color: #219bf3;
     margin-bottom: 16px;
   }
   .btn {
-    margin-top: 32px;
+    display: block;
+    width: 100%;
   }
   .go__register {
-    margin-left: 43%;
-    margin-top: 15px;
-    font-size: 12px;
+    margin-top:2rem;
+    font-size: 1rem;
   }
 }
 
 input.input {
   padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #219bf3;
-  outline: none;
+  border: 1px solid #219bf3;  
   color: #219bf3;
-  min-width: 300px;
-  margin-bottom: 12px;
   display: block;
+  font-family: "Montserrat";
 }
 
 button.btn {
   padding: 16px;
   border: 1px solid #219bf3;
-  border-radius: 8px;
   min-width: 200px;
   background: #219bf3;
   color: white;
@@ -68,8 +63,8 @@ button.btn {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: -100px;
-  margin-top: 50px;
-  font-size: 48pt;
+  font-size: 2rem;
   color: #219bf3;
+  margin-top: 180px;
+  margin-bottom: -180px;
 }
