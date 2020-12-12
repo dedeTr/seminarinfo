@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { db } from '../../../../Controller/Firebase';
 import './ListCard.css'
+import ModalEdit from '../ModalEdit'
 
 function ListCard({data}) {
+    const [open, setOpen] = useState(false);
 
     const handleDelete = () => {
         db.collection("webinar").doc(data.id).delete().then(function() {
@@ -11,6 +13,12 @@ function ListCard({data}) {
             alert("Error removing document: ", error);
         });
     }
+
+
+    const hideModal = () => setOpen(false);
+    const showModal = () => setOpen(true);
+
+    
 
     return (
         <div className="row__list">
@@ -28,6 +36,9 @@ function ListCard({data}) {
             <div className="aksi__list">
                 <button onClick={handleDelete}>Hapus</button>
             </div> */}
+
+            <ModalEdit handleClose={hideModal} open={open} id={data.id}/>
+      
             <table>
                 <tr>
                     <th className="poster"><img src={data.poster_url} /></th>
@@ -39,7 +50,9 @@ function ListCard({data}) {
                     </th>
                     <th className="deskripsi">{data.deskripsi}</th>
                     <th className="aksi">
-                        <button class="btn-hapus" onClick={handleDelete}>Hapus</button>
+                        <button className="btn-hapus" onClick={handleDelete}>Hapus</button>
+                        <button className="btn-edit" onClick={showModal}>Edit</button>
+                        
                     </th>
                 </tr>
             </table>

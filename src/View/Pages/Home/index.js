@@ -22,19 +22,19 @@ function Home() {
         setSearch(e.target.value)
     }
 
-    const handleTopik = (e,id) => {
+    const handleTopik = (e,id,event) => {
         let allElements = Array.from(document.querySelectorAll('.tag__bar'))
         for (let element of allElements) {
-          element.classList.remove('choosed')
+            element.classList.remove('choosed')           
         }        
         const element = document.getElementById(id);
         element.classList.toggle("choosed");
-        if(e == topik){
+        if(e === topik){
             setTopik("")
         }else{
             setTopik(e)
         }
-        console.log(e)
+        console.log(topik)
     }
 
     return (
@@ -47,16 +47,16 @@ function Home() {
             <h2>Seminar yang tersedia</h2>
             <div className="Tag__line">
                 <p className="topik-teks">Topik yang dipilih :</p>
-                <div className="tag__bar" id="tag__bar1" onClick={(e)=>handleTopik("Teknologi","tag__bar1")}>
+                <div className="tag__bar" id="tag__bar1" onClick={(event)=>handleTopik("Teknologi","tag__bar1",event)}>
                     <p>Teknologi</p>
                 </div>
-                <div className="tag__bar" id="tag__bar2" onClick={()=>handleTopik("Kesehatan","tag__bar2")}>
+                <div className="tag__bar" id="tag__bar2" onClick={(event)=>handleTopik("Kesehatan","tag__bar2",event)}>
                     <p>Kesehatan</p>
                 </div>
-                <div className="tag__bar" id="tag__bar3" onClick={()=>handleTopik("Ekonomi","tag__bar3")}>
+                <div className="tag__bar" id="tag__bar3" onClick={(event)=>handleTopik("Ekonomi","tag__bar3",event)}>
                     <p>Ekonomi</p>
                 </div>
-                <div className="tag__bar" id="tag__bar4"  onClick={()=>handleTopik("Pendidikan","tag__bar4")}>
+                <div className="tag__bar" id="tag__bar4"  onClick={(event)=>handleTopik("Pendidikan","tag__bar4",event)}>
                     <p>Pendidikan</p>
                 </div>
             </div>

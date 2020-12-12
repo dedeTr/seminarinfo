@@ -6,7 +6,7 @@ table {
   width: 100%;
 }
 
-.poster{
+.poster {
   width: 20vw;
   border: 1px solid black;
   padding: 1rem;
@@ -20,9 +20,9 @@ table {
 
 .deskripsi {
   border: 1px solid black;
-  width: 40vw;
+  max-width: 40vw;
   text-align: left;
-  padding: .5rem;
+  padding: 0.5rem;
   font-weight: normal;
 }
 
@@ -40,10 +40,28 @@ table {
   background-color: #d63820;
   border: none;
   pointer-events: visible;
-  cursor: grab;
+  cursor: pointer;
+  margin-bottom: 8px;
 }
 
-.btn-hapus:hover{
-  background-color: #f33621 ;
-  cursor: grabbing;
+.btn-hapus:hover {
+  background-color: #f33621;
+  cursor: pointer;
+}
+
+.btn-edit {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #61b15a;
+  border: none;
+  pointer-events: visible;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background-color: #adce74;
+  cursor: pointer;
 }

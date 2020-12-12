@@ -7,19 +7,19 @@
 .nav-container {
   display: flex;
   justify-content: space-between;
-  background-color:  #219bf3;
+  background-color: #219bf3;
   align-content: center;
   margin-top: -2rem;
   height: 3rem;
   padding: 1rem;
 }
 
-.header-text{
+.header-text {
   font-size: 2rem;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   text-transform: uppercase;
-  color:#fff;
-  margin-left: 1.5rem;;
+  color: #fff;
+  margin-left: 1.5rem;
 }
 
 .title {
@@ -44,10 +44,10 @@
   text-align: center;
   border: 1px solid black;
   flex: 0.2;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 
-.poster{
+.poster {
   width: 20vw;
   border: 1px solid black;
 }
@@ -70,7 +70,7 @@ table {
   width: 100%;
 }
 
-.ta-center{
+.ta-center {
   text-align: center;
 }
 

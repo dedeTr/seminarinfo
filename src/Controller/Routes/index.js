@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Admin, CreateWebinar, Home, Login, Register } from '../../View/Pages';
+import Detail from '../../View/Pages/Detail';
 
 
 function Routes() {
@@ -9,6 +10,9 @@ function Routes() {
           <Switch>
             <Route path="/dashboard">
               <Home />
+            </Route>
+            <Route path="/detail/:id">
+              <Detail />
             </Route>
             <Route path="/admin">
               <Admin />
