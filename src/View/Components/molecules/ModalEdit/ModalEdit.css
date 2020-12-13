@@ -24,3 +24,11 @@
 .display-none {
   display: none;
 }
+
+#scroll-dialog-title {
+  font-family: "Montserrat" !important;
+}
+
+#judul {
+  font-family: 'Montserrat';
+}
