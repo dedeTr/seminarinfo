@@ -8,6 +8,7 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import uploadPoster from '../../../../Model/uploadPoster';
 import updateWebinar from '../../../../Model/updateWebinar';
+import { createMuiTheme } from '@material-ui/core';
 
 function ModalEdit({handleClose, open, id}) {
     const [judul, setJudul] = useState("")
@@ -51,9 +52,15 @@ function ModalEdit({handleClose, open, id}) {
         updateWebinar(stateToUpadate)
         handleClose()
     }
-    
+
+    const theme = createMuiTheme({
+        typography: {
+          fontFamily: ['Montserrat'],
+        },
+    }); 
+
   return ( 
-      <div>
+      <div className="margin-bottom-2">
         {/* <Button onClick={() => setOpen(true)}>scroll=paper</Button> */}
         <Dialog
           open={open}
@@ -62,7 +69,7 @@ function ModalEdit({handleClose, open, id}) {
           aria-labelledby="scroll-dialog-title"
           aria-describedby="scroll-dialog-description"
         >
-          <DialogTitle id="scroll-dialog-title">Edit Webinar</DialogTitle>
+          <DialogTitle theme={theme} id="scroll-dialog-title">Edit Webinar</DialogTitle>
           <DialogContent dividers={true}>
             <DialogContentText
               id="scroll-dialog-description"
@@ -88,7 +95,7 @@ function ModalEdit({handleClose, open, id}) {
                     <textarea placeholder="Deskripsi..." id="deskripsi" onChange={(e) => setDeskripsi(e.target.value)} required/>
                     <label for="poster">Poster</label>
                     <input type="file" id="poster" required onChange={e => setPosterUploaded(e.target.files[0])} />
-                    <input type="submit" value="SUBMIT" id="submit-btn" />
+                    <input type="submit" value="SUBMIT" id="submit-btn submit-btn-edit" />
                 </form>
             </DialogContentText>
           </DialogContent>

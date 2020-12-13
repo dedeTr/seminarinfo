@@ -37,24 +37,35 @@ const Detail = () => {
 
     return (
         <div className="detail__container">
-            <div className="nav-container">
-                <a href="/dashboard">
-                    <h1 className="header-text log-text">SEMINARINFO</h1>
-                </a>
-            </div>
+            <div className="header-detail">
+                        <a href="/dashboard"><span className="icon-back"></span></a>
+                        <h1 className="detail-webinar-judul">Detail Webinar</h1>
+                    </div>
             <div className="image__container">
                 <img src={data.poster_url} />
             </div>
+            <h1 className="judul-webinar">{data.judul}</h1>
             <div className="info__detail">
-                Judul: {data.judul}<br/>
-                Nama: {data.nama}<br/>
-                Topik: {data.topik}<br/>
-                Biaya: {data.biaya}<br/>
-                Platform: {data.platform}<br/>
-                Jadwal: {data.jadwal}<br/>
-                Link: {data.link}<br/>
+                <div className="margin-top-2 sect-pembicara">
+                    Pembicara: <span className="font-weight-bold">{data.nama}</span>
+                </div>
+                <div className="margin-top-2 sect-topik">
+                    Topik: <span className="font-weight-bold">{data.topik}</span>
+                </div>
+                <div className="margin-top-2 sect-biaya">
+                    Biaya: <span className="font-weight-bold">{data.biaya}</span>
+                </div>
+                <div className="margin-top-2 sect-platoform">
+                    Platform: <span className="font-weight-bold">{data.platform}</span>
+                </div>
+                <div className="margin-top-2 sect-jadwal">
+                    Jadwal: <span className="font-weight-bold">{data.jadwal}</span>
+                </div>
+                <div className="margin-top-2 sect-link">
+                    <span className="font-weight-bold"><a target="_blank" href={'https://' + data.link}>{data.link}</a></span>
+                </div>
             </div>
-            <div className="deskripsi__detail">
+            <div className="deskripsi-detail">
                 {data.deskripsi}
             </div>
             
